@@ -12,8 +12,10 @@ from gasmine import dataset, detectors, diffing
 ROOT = Path(__file__).resolve().parent.parent / "dataset"
 
 pytestmark = pytest.mark.skipif(
-    shutil.which("solc") is None or shutil.which("solc-select") is None,
-    reason="solc toolchain not installed",
+    shutil.which("solc") is None
+    or shutil.which("solc-select") is None
+    or not ROOT.exists(),
+    reason="solc toolchain and/or sample dataset/ not available",
 )
 
 EXPECTED = {

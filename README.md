@@ -171,8 +171,9 @@ Unit tests cover AST normalization, dataset loading, and catalog aggregation.
 Integration tests (auto-skipped without the toolchain) run solc + detectors over
 the sample dataset and a Foundry gas measurement.
 
-## Note on the sample dataset
+## Dataset
 
-`dataset/` ships **9 small example pairs** (one per detector, plus one
-`uncategorized` rename) so the pipeline runs end-to-end out of the box. Replace
-it with your real corpus and re-run `python -m gasmine run`.
+This repo does not ship a dataset. Create a `dataset/` directory in the layout
+described above (or point `--dataset` at your own path) and run
+`python -m gasmine run`. The dataset-backed integration tests skip automatically
+when `dataset/` is absent.

@@ -1,8 +1,14 @@
 from pathlib import Path
 
+import pytest
+
 from gasmine import dataset
 
 ROOT = Path(__file__).resolve().parent.parent / "dataset"
+
+pytestmark = pytest.mark.skipif(
+    not ROOT.exists(), reason="sample dataset/ not present"
+)
 
 
 def test_paired_layout_detected():

@@ -10,8 +10,10 @@ from gasmine import dataset, gas
 ROOT = Path(__file__).resolve().parent.parent / "dataset"
 
 pytestmark = pytest.mark.skipif(
-    shutil.which("forge") is None or shutil.which("solc") is None,
-    reason="Foundry / solc toolchain not installed",
+    shutil.which("forge") is None
+    or shutil.which("solc") is None
+    or not ROOT.exists(),
+    reason="Foundry / solc toolchain and/or sample dataset/ not available",
 )
 
 
