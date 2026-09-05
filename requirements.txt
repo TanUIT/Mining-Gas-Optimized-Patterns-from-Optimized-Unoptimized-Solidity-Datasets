@@ -1,0 +1,18 @@
+# Core numerical / data handling
+numpy>=1.26
+pandas>=2.0
+
+# Section 2: AST-similarity pairing
+scipy>=1.11        # linear_sum_assignment (maximum-weight matching)
+zss>=1.2           # Zhang-Shasha tree edit distance
+
+# Sections 3-4: diffing, rule detectors, clustering
+scikit-learn>=1.3  # TF-IDF vectorizer + HDBSCAN (sklearn.cluster.HDBSCAN)
+
+# Testing
+pytest>=7.4
+
+# NOTE: heavy code-embedding models (CodeBERT / torch / transformers) are
+# intentionally NOT pinned here. Section 4b uses TF-IDF over AST-node-type /
+# opcode sequences to keep the environment light and reproducible. Swap in an
+# embedding backend later if the dataset grows large enough to warrant it.

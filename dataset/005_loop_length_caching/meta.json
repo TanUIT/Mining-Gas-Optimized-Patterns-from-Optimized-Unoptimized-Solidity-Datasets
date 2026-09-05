@@ -1,0 +1,15 @@
+{
+  "id": "005",
+  "erc": null,
+  "tag_hint": "loop-length-caching",
+  "source": "manual",
+  "contract": "Averager",
+  "calls": [
+    {
+      "name": "stats",
+      "method": "stats",
+      "args": [],
+      "setup": [{ "method": "seed", "args": ["30"] }]
+    }
+  ]
+}

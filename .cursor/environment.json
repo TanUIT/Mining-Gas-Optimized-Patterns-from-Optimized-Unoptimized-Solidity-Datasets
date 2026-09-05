@@ -1,0 +1,4 @@
+{
+  "name": "Gas Pattern Mining",
+  "install": "bash .cursor/install.sh"
+}

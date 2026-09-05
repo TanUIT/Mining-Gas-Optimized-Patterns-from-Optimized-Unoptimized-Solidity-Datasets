@@ -1,0 +1,10 @@
+{
+  "id": "001",
+  "erc": "20",
+  "tag_hint": "require-reason-string",
+  "source": "manual",
+  "contract": "Vault",
+  "calls": [
+    { "name": "revert_path", "method": "withdraw", "args": ["1"], "expect_revert": true }
+  ]
+}
