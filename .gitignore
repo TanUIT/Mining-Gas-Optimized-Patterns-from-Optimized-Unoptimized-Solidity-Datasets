@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Pipeline outputs / generated Foundry harness
+out/
+.gasmine_foundry/
+pairs.csv
+clusters.json
+
+# Foundry
+cache/

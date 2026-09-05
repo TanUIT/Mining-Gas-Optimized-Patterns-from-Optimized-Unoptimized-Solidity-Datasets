@@ -1,0 +1,10 @@
+{
+  "id": "004",
+  "erc": null,
+  "tag_hint": "unchecked-loop-increment",
+  "source": "manual",
+  "contract": "Counter",
+  "calls": [
+    { "name": "loop50", "method": "loop", "args": ["50"] }
+  ]
+}

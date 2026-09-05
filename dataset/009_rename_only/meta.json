@@ -1,0 +1,10 @@
+{
+  "id": "009",
+  "erc": null,
+  "tag_hint": "identifier-rename-only",
+  "source": "manual",
+  "contract": "Adder",
+  "calls": [
+    { "name": "compute", "method": "compute", "args": ["2", "3"] }
+  ]
+}
